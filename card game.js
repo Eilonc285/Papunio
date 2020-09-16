@@ -558,7 +558,7 @@ function getPlayableCard() {
 }
 
 function checkWinner() {
-    if (properties.winner !== null) {
+    if (properties.winner === null) {
         for (let i = 0; i < properties.playersAmount; i++) {
             if (
                 properties.players[i].hand.length == 0 &&
@@ -783,7 +783,7 @@ function draw() {
         );
         pop();
     }
-    if (properties.winner) {
+    if (properties.winner !== null) {
         push();
         resetMatrix();
         rectMode(CORNER);
