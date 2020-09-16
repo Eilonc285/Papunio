@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <script src="./p5.js"></script>
@@ -9,4 +8,5 @@
     <body>
         <script src="card game.js"></script>
     </body>
+
 </html>
