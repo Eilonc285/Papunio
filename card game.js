@@ -388,7 +388,11 @@ function takeCenter() {
 let myCount = 0;
 let flag = false;
 function mouseClicked() {
-    if (flag) {
+    if (flag && myCount < 5) {
+        myCount++;
+        if (myCount > 5) {
+            flag = false;
+        }
         return;
     }
     flag = true;
@@ -788,12 +792,12 @@ function draw() {
         pop();
     }
     drawLog();
-    if (flag) {
-        myCount++;
-        if (myCount > 1) {
-            myCount = 0;
-            flag = false;
-        }
-    }
+    // if (flag) {
+    //     myCount++;
+    //     if (myCount > 5) {
+    //         myCount = 0;
+    //         flag = false;
+    //     }
+    // }
     properties.delayCounter++;
 }
