@@ -790,7 +790,7 @@ function draw() {
     drawLog();
     if (flag) {
         myCount++;
-        if (myCount > 10) {
+        if (myCount > 1) {
             myCount = 0;
             flag = false;
         }
