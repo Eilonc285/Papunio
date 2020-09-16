@@ -386,16 +386,12 @@ function takeCenter() {
     }
 }
 let myCount = 0;
-let flag = false;
 function mousePressed() {
-    // if (flag && myCount < 5) {
-    //     myCount++;
-    //     if (myCount > 5) {
-    //         flag = false;
-    //     }
-    //     return;
-    // }
-    // flag = true;
+    if (myCount < 3) {
+        return;
+    } else {
+        myCount = 0;
+    }
     let select = null;
     if (properties.turn == 0) {
         if (
@@ -799,5 +795,6 @@ function draw() {
     //         flag = false;
     //     }
     // }
+    myCount++;
     properties.delayCounter++;
 }
