@@ -452,6 +452,7 @@ function mousePressed() {
                         ) {
                             if (isPlayableCard(properties.selectedCard)) {
                                 playCard(properties.selectedCard);
+                                properties.hasToFinish = true;
                             } else {
                                 playCard(properties.selectedCard);
                                 takeCenter();
