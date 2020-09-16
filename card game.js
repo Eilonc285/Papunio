@@ -387,7 +387,7 @@ function takeCenter() {
 }
 let myCount = 0;
 function mousePressed() {
-    if (myCount < 3) {
+    if (myCount < 10) {
         return;
     } else {
         myCount = 0;
