@@ -387,7 +387,7 @@ function takeCenter() {
 }
 let myCount = 0;
 let flag = false;
-function mouseClicked() {
+function mousePressed() {
     // if (flag && myCount < 5) {
     //     myCount++;
     //     if (myCount > 5) {
