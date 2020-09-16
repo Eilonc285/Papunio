@@ -388,14 +388,14 @@ function takeCenter() {
 let myCount = 0;
 let flag = false;
 function mouseClicked() {
-    if (flag && myCount < 5) {
-        myCount++;
-        if (myCount > 5) {
-            flag = false;
-        }
-        return;
-    }
-    flag = true;
+    // if (flag && myCount < 5) {
+    //     myCount++;
+    //     if (myCount > 5) {
+    //         flag = false;
+    //     }
+    //     return;
+    // }
+    // flag = true;
     let select = null;
     if (properties.turn == 0) {
         if (
