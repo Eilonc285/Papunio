@@ -19,6 +19,8 @@ let properties = {
     hasToFinish: false,
     winner: null,
     history: [],
+    playFlag: false,
+    timeDelay: 1000,
 };
 
 function drawCard(card, x, y) {
@@ -688,7 +690,15 @@ function draw() {
             pop();
         }
     }
-    if (properties.turn != 0 && properties.delayCounter > 85) {
+    if (!properties.timerFlag) {
+        properties.timerFlag = true;
+        setTimeout(() => {
+            properties.playFlag = true;
+            properties.timerFlag = false;
+        }, properties.timeDelay);
+    }
+    if (properties.turn != 0 && properties.playFlag) {
+        properties.playFlag = false;
         if (properties.playedThisTurn) {
             if (canPlaySecondCard()) {
                 let c = getPlayableCard();
