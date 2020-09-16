@@ -386,7 +386,7 @@ function takeCenter() {
     }
 }
 
-function mousePressed() {
+function mouseClicked() {
     let select = null;
     if (properties.turn == 0) {
         if (
