@@ -20,6 +20,7 @@ let properties = {
     winner: null,
     history: [],
     playFlag: false,
+    timerFlag: false,
     timeDelay: 1000,
 };
 
@@ -690,7 +691,7 @@ function draw() {
             pop();
         }
     }
-    if (!properties.timerFlag) {
+    if (!properties.timerFlag && properties.turn != 0) {
         properties.timerFlag = true;
         setTimeout(() => {
             properties.playFlag = true;
