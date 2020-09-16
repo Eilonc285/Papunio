@@ -2,7 +2,7 @@ let properties = {
     canvasWidth: 1200,
     canvasHeight: 1200,
     backgroundBrightness: 220,
-    packsAmount: 2,
+    packsAmount: 1,
     playersAmount: 3,
     cardWidth: 80,
     cardHeight: 120,
