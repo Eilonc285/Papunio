@@ -385,8 +385,13 @@ function takeCenter() {
         properties.hasToFinish = true;
     }
 }
-
+let myCount = 0;
+let flag = false;
 function mouseClicked() {
+    if (flag) {
+        return;
+    }
+    flag = true;
     let select = null;
     if (properties.turn == 0) {
         if (
@@ -783,5 +788,12 @@ function draw() {
         pop();
     }
     drawLog();
+    if (flag) {
+        myCount++;
+        if (myCount > 10) {
+            myCount = 0;
+            flag = false;
+        }
+    }
     properties.delayCounter++;
 }
