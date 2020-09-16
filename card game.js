@@ -771,15 +771,15 @@ function draw() {
         fill(0, 0, 0);
         textSize(35);
         text(
-            "Play",
-            properties.canvasWidth - 157,
-            properties.canvasHeight - 215,
-            45,
-            45
+            "PLAY CARD",
+            properties.canvasWidth - 170,
+            properties.canvasHeight - 235,
+            60,
+            80
         );
         text(
-            "End turn",
-            properties.canvasWidth - 157,
+            "END TURN",
+            properties.canvasWidth - 170,
             properties.canvasHeight - 115,
             45,
             80
