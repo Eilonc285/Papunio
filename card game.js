@@ -361,7 +361,6 @@ function playCard(card) {
 function endTurn() {
     fillHand();
     properties.playedThisTurn = false;
-    properties.delayCounter = 0;
     if (properties.explode) {
         properties.explode = false;
         explode();
@@ -689,7 +688,7 @@ function draw() {
             pop();
         }
     }
-    if (properties.turn != 0 && properties.delayCounter > 100) {
+    if (properties.turn != 0 && properties.delayCounter > 85) {
         if (properties.playedThisTurn) {
             if (canPlaySecondCard()) {
                 let c = getPlayableCard();
@@ -788,13 +787,6 @@ function draw() {
         pop();
     }
     drawLog();
-    // if (flag) {
-    //     myCount++;
-    //     if (myCount > 5) {
-    //         myCount = 0;
-    //         flag = false;
-    //     }
-    // }
     myCount++;
     properties.delayCounter++;
 }
