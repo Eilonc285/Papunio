@@ -438,6 +438,9 @@ function mousePressed() {
                             isPlayableCard(properties.selectedCard)
                         ) {
                             playCard(properties.selectedCard);
+                            if (properties.players[0].table.length < 5) {
+                                properties.hasToFinish = true;
+                            }
                         }
                     }
                 } else {
